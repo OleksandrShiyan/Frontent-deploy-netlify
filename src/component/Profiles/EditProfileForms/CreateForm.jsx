@@ -1,0 +1,108 @@
+import React from "react";
+import style from "./EditForm.module.css"
+import {Field, Form} from "react-final-form";
+
+function CreateForm (props) {
+    const onSubmit = (formData) => {
+        props.createProfile(formData.fullname, formData.sex, formData.birth, formData.city,  props.userId);
+        props.setCreate(false);
+    };
+    const validate = (values) => {
+        const errors = {}
+        if (!values.fullname) {
+            errors.fullname = 'Required'
+        }
+        if (!values.sex) {
+            errors.sex = 'Required'
+        }
+        if (!values.birth) {
+            errors.birth = 'Required'
+        }
+        if (!values.city) {
+            errors.city = 'Required'
+        }
+        return errors
+    }
+
+    const deleteCreate = () =>{
+        props.setCreate(false);
+    }
+
+    return (
+        <div className={style.modal}>
+            <div className={style.modalContent}>
+                <Form
+                    onSubmit={onSubmit}
+                    validate={validate}
+                    render={({ handleSubmit }) => (
+                        <form onSubmit={handleSubmit}>
+                            <div>
+                                <label>Full Name</label>
+                                <Field name="fullname">
+                                    {({ input, meta }) => (
+                                        <div>
+                                            <label>Username</label>
+                                            <input {...input} type="text" placeholder="Full name" />
+                                            {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        </div>
+                                    )}
+                                </Field>
+                            </div>
+                            <div>
+                                <label>Sex</label>
+                                <div>
+                                    <label>
+                                        <Field
+                                            name="sex"
+                                            component="input"
+                                            type="radio"
+                                            value="Male"
+                                        />{' '}
+                                        Male
+                                    </label>
+                                    <label>
+                                        <Field
+                                            name="sex"
+                                            component="input"
+                                            type="radio"
+                                            value="Female"
+                                        />{' '}
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <Field name="birth">
+                                    {({ input, meta }) => (
+                                        <div>
+                                            <label>Birth</label>
+                                            <input {...input} type="text" placeholder="Birth" />
+                                            {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        </div>
+                                    )}
+                                </Field>
+                            </div>
+                            <div>
+                                <Field name="city">
+                                    {({ input, meta }) => (
+                                        <div>
+                                            <label>City</label>
+                                            <input {...input} type="text" placeholder="City" />
+                                            {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        </div>
+                                    )}
+                                </Field>
+                            </div>
+
+                            <button type="submit">Submit</button>
+                            {/*need to delete form without warnings*/}
+                            <button onClick={deleteCreate}>Exit</button>
+                        </form>
+                    )}/>
+            </div>
+        </div>
+    )
+
+}
+
+export default CreateForm;

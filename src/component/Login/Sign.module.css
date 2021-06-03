@@ -1,0 +1,38 @@
+.edit{
+    width : 100vw;
+    heigth : 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 15% auto;
+    padding: 30px 50px;
+    border: 1px solid #888;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.button{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+}

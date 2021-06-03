@@ -1,0 +1,29 @@
+.user{
+    width: 250px;
+    height: 270px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #D6D8E7;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 15px;
+
+}
+.users{
+    padding-left: 80px;
+    padding-top: 30px;
+    display: inline-block;
+}
+.text{
+    display: block;
+    margin: 20px;
+    width: 50%;
+    padding: 10px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.75px;
+}

@@ -1,0 +1,12 @@
+.profile{
+    width: 250px;
+    height: 270px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #D6D8E7;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 15px;
+    float: left;
+}
