@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.389fc142.chunk.css",
+    "main.js": "/static/js/main.afca490b.chunk.js",
+    "main.js.map": "/static/js/main.afca490b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.41f2a1e1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.41f2a1e1.js.map",
+    "static/js/2.4544fed0.chunk.js": "/static/js/2.4544fed0.chunk.js",
+    "static/js/2.4544fed0.chunk.js.map": "/static/js/2.4544fed0.chunk.js.map",
+    "static/js/3.197c6a44.chunk.js": "/static/js/3.197c6a44.chunk.js",
+    "static/js/3.197c6a44.chunk.js.map": "/static/js/3.197c6a44.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.389fc142.chunk.css.map": "/static/css/main.389fc142.chunk.css.map",
+    "static/js/2.4544fed0.chunk.js.LICENSE.txt": "/static/js/2.4544fed0.chunk.js.LICENSE.txt",
+    "static/media/cupertino_activity_indicator.f986ff88.gif": "/static/media/cupertino_activity_indicator.f986ff88.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41f2a1e1.js",
+    "static/js/2.4544fed0.chunk.js",
+    "static/css/main.389fc142.chunk.css",
+    "static/js/main.afca490b.chunk.js"
+  ]
+}
